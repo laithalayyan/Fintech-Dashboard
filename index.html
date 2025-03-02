@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task2 Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>       
+<body class="bg-white">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Fixed Sidebar -->
+      <nav class="sticky-top d-none d-md-none d-lg-flex flex-column align-items-center bg-body-secondary border-end rounded-4 p-3  navbar vh-100 position-fixed top-0 start-0 m-1">
+        <div class="mb-3 mt-2">
+          <img src="assets/logo.png" alt="Logo" class="img-fluid" />
+        </div>
+        <nav class="nav flex-column gap-3 mb-5">
+          <a href="#" class="nav-link text-dark"><i class="bi bi-briefcase"></i></a>
+          <a href="#" class="nav-link text-dark"><i class="bi bi-chat-dots"></i></a>
+          <a href="#" class="nav-link text-dark"><i class="bi bi-bell"></i></a>
+          <a href="#" class="nav-link text-dark"><i class="bi bi-file-earmark-text"></i></a>
+          <a href="#" class="nav-link text-dark"><i class="bi bi-chat-dots"></i></a>
+          <a href="#" class="nav-link text-dark"><i class="bi bi-calendar-event"></i></a>
+        </nav>
+        <div class="mt-auto d-flex flex-column align-items-center gap-2">
+          <i class="bi bi-people-fill fs-5"></i>
+          <hr class="my-4 border-black w-100" />
+          <img src="https://i.pravatar.cc/35?img=8" alt="User Avatar" class="mb-2 rounded-circle" />
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col ms-lg-5 ps-lg-5">
+        <div class="p-4">
+          <div class="d-block d-lg-none mb-3">
+            <nav class="d-flex justify-content-around bg-body-secondary border rounded-4 p-2">
+              <a href="#" class="nav-link text-dark"><i class="bi bi-briefcase"></i></a>
+              <a href="#" class="nav-link text-dark"><i class="bi bi-chat-dots"></i></a>
+              <a href="#" class="nav-link text-dark"><i class="bi bi-bell"></i></a>
+              <a href="#" class="nav-link text-dark"><i class="bi bi-file-earmark-text"></i></a>
+              <a href="#" class="nav-link text-dark"><i class="bi bi-chat-dots"></i></a>
+              <a href="#" class="nav-link text-dark"><i class="bi bi-calendar-event"></i></a>
+            </nav>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="w-75 position-relative">
+                  <input type="text" class="form-control ps-5 py-2 bg-body-secondary" placeholder="Searching for..." />
+                  <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                </div>
+                <button class="btn btn-outline-secondary border">
+                  <i class="fas fa-plus text-dark"></i>
+                </button>
+              </div>
+
+              <h4 class="mb-3">My Accounts</h4>
+
+              <div class="main-wallet position-relative text-white rounded-4 p-4 mb-3">
+                <div class="position-absolute top-20 start-20">
+                  <h2 class="display-6 fw-bold">$9,050.00</h2>
+                </div>
+                <div class="position-absolute top-0 end-0 p-3">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <div class="position-absolute bottom-0 pb-3 start-20">
+                  <p class="mb-0">Main Wallet</p>
+                </div>
+                <div class="position-absolute bottom-0 pb-3 pe-3 end-0">
+                  <h3>$4,560</h3>
+                  <p class="mb-0">Income</p>
+                </div>
+                <img src="assets/undraw_savings_uwjn.svg" alt="Savings" class="img-fluid position-absolute w-50 w-sm-25 d-none d-md-block d-lg-block" />
+              </div>
+
+              <div class="row mb-3 g-2">
+                <div class="col-md-4">
+                  <div class="card p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="card-icon position-relative d-flex align-items-center justify-content-center indicator1">
+                        <i class="bi bi-lightbulb-fill bg-white position-relative rounded-circle py-1 px-2"></i>
+                      </div>
+                      <div>
+                        <p class="mb-0 fw-semibold">Electronic</p>
+                        <h5 class="mb-0 fw-bold">$899.00</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="card-icon position-relative d-flex align-items-center justify-content-center indicator2">
+                        <i class="bi bi-stars bg-white rounded-circle position-relative py-1 px-2"></i>
+                      </div>
+                      <div>
+                        <p class="mb-0 fw-semibold">Cosmetic</p>
+                        <h5 class="mb-0 fw-bold">$123.00</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="card-icon position-relative d-flex align-items-center justify-content-center incicator3">
+                        <i class="fa-solid fa-paw bg-white rounded-circle position-relative p-2"></i>
+                      </div>
+                      <div>
+                        <p class="mb-0 fw-semibold">Pets Shop</p>
+                        <h5 class="mb-0 fw-bold">$350.12</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="mb-1">Last Spending</h4>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th><span class="border rounded-3 px-4 py-1">09.11.2020</span></th>
+                    <th><span class="border rounded-3 px-4 py-1">Status</span></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="bg-light rounded-circle p-2">
+                          <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <div>
+                          <p class="mb-0 fw-bold">The Light Cafe</p>
+                          <p class="mb-0">Pets Shop</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-check-circle-fill mt-2"></i>
+                        <p class="mb-0 mt-2">Done</p>
+                      </div>
+                    </td>
+                    <td class="text-end">
+                      <h5 class="mb-0 fw-bold">$98.45</h5>
+                      <p class="mb-0">11:00</p>
+                    </td>
+                  </tr>
+                  <tr><td colspan="3"><hr class="my-2"></td></tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="bg-light rounded-circle p-2">
+                          <i class="bi bi-trophy-fill"></i>
+                        </div>
+                        <div>
+                          <p class="mb-0 fw-bold">Phone Fixes</p>
+                          <p class="mb-0">Electronic</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-exclamation-circle-fill mt-2"></i>
+                        <p class="mb-0 mt-2">Waiting</p>
+                      </div>
+                    </td>
+                    <td class="text-end">
+                      <h5 class="mb-0 fw-bold">$899.00</h5>
+                      <p class="mb-0">10:45</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-12 col-lg-4 mt-3 mt-lg-0">
+              <div class="bg-body-secondary p-3 rounded-4">
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                  <button class="btn btn-sm mx-3"><</button>
+                  <span class="fw-bold fs-6 fs-lg-5">November</span>
+                  <button class="btn btn-sm mx-3">></button>
+                </div>
+                <h3 class="fw-bold text-center fs-3 fs-lg-2">$1,123.00</h3>
+                <p class="text-center mb-4 fs-6 fs-lg-5">Daily budget</p>
+                <div class="bg-white p-3 rounded-3 mb-4">
+                  <div class="position-relative mb-4">
+                    <div class="progress progress-bar-custom border border-primary rounded-pill p-4" >
+                      <div class="progress-bar" role="progressbar" ></div>
+                    </div>
+                    <span class="position-absolute top-50 start-0 translate-middle-y ms-4 fw-bold text-white">41%</span>
+                    <span class="position-absolute top-50 end-0 translate-middle-y me-4 fw-bold">59%</span>
+                  </div>
+                  <div class="d-flex justify-content-center gap-4">
+                    <div>
+                      <p class="mb-1 fw-bold">Spent</p>
+                      <h5 class="mb-1 fw-bold">$450</h5>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                      <p class="mb-1 fw-bold">Left</p>
+                      <h5 class="mb-1 fw-bold">$673</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradient-container text-white p-4 rounded-4">
+                  <h5 class="fw-bold mb-5">My Goals</h5>
+                  <div class="mb-4">
+                    <p class="mb-1">Save</p>
+                    <h5 class="mb-0">$900 <span class="opacity-50">$569</span></h5>
+                  </div>
+                  <div class="mb-5">
+                    <p class="mb-1">Spend</p>
+                    <h5 class="mb-0">$4,600 <span class="opacity-50">$4,280</span></h5>
+                  </div>
+                  <p class="mb-0">You are a master of savings!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

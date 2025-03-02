@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+.main-wallet {
+    background: linear-gradient(150deg, #497cd5, #bab0c6);
+    height: 180px;
+}
+.main-wallet img {
+    bottom: 0px;
+    right: 90px;
+    width: 250px;
+    height: 250px;
+}
+.navbar {
+    width: 80px;
+    top: 20px;
+}
+.card-icon {
+    width: 48px;
+    height: 48px;
+}
+.card-icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(var(--indicator-color) var(--indicator-percent), #e9ecef 0%);
+}
+/* 41 59 indicator */
+.progress-bar-custom {
+    background: linear-gradient(90deg, #9088e3 41%, #7f9ac9 59%, #e9ecef 59%);
+}
+/* right content container */
+.gradient-container {
+    background: linear-gradient(350deg, #6a11cb, rgb(149, 175, 205), #2575fc);
+}
+
+/*  indicators for cards elec, come , pets shop */
+
+.indicator1 {
+    --indicator-color: #5d86c4;
+    --indicator-percent: 30%;
+}
+.indicator2 {
+    --indicator-color: #c6d317; 
+    --indicator-percent: 50%;
+}
+.incicator3 {
+    --indicator-color: #5900ff; 
+    --indicator-percent: 70%;
+}
+
+
+ 
